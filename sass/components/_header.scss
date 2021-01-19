@@ -180,12 +180,6 @@
     }
 }
 
-.contacts .item:first-child{
-    @media screen and (min-width: 1200px) {
-        margin-right: 30px;
-    }
-}
-
 .contacts .link{
     color: $primary-text-color;
     font-weight: 500;
@@ -225,9 +219,7 @@
 }
 
 .item.mail{
-    @media screen and (min-width: 480px){
-        margin-bottom: 16px;
-    }
+    margin-bottom: 16px;
 
     @media screen and (min-width: 768px){
         margin-bottom: 12px;
@@ -235,6 +227,7 @@
 
     @media screen and (min-width: 1200px){
         margin-bottom: 0;
+        margin-right: 30px;
     }
 }
 

@@ -616,12 +616,6 @@ img {
   }
 }
 
-@media screen and (min-width: 1200px) {
-  .contacts .item:first-child {
-    margin-right: 30px;
-  }
-}
-
 .contacts .link {
   color: #757575;
   font-weight: 500;
@@ -672,10 +666,8 @@ img {
   }
 }
 
-@media screen and (min-width: 480px) {
-  .item.mail {
-    margin-bottom: 16px;
-  }
+.item.mail {
+  margin-bottom: 16px;
 }
 
 @media screen and (min-width: 768px) {
@@ -687,6 +679,7 @@ img {
 @media screen and (min-width: 1200px) {
   .item.mail {
     margin-bottom: 0;
+    margin-right: 30px;
   }
 }
 
@@ -856,7 +849,7 @@ img {
 
 .modal {
   position: relative;
-  width: 450px;
+  max-width: 100%;
   background-color: #FFFFFF;
 }
 
