@@ -1,0 +1,31 @@
+.our-clients{
+    padding-top: 94px;
+    padding-bottom: 94px;
+}
+
+.clients-logos{
+    display: flex;
+}
+.clients-logos li + li{
+    margin-left: 30px;
+}
+
+.client{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 170px;
+    height: 90px;
+    border-radius: 4px;
+    color: $icon-default-color;
+    border: 1px solid $icon-default-color;
+    cursor: pointer;
+
+    transition: color 250ms $timing-function, 
+    border 250ms $timing-function;
+
+    &:hover{
+        color: $accent;
+        border: 1px solid $accent;
+    }
+}

@@ -1,0 +1,127 @@
+.footer{
+    background-color: $tertialy-bg-color;
+
+    &-line{
+        padding-top: 60px;
+        padding-bottom: 60px;
+        text-align: center;
+
+        @media screen and (min-width: 1200px) {
+            display: flex;
+            align-items: baseline;
+
+            text-align: left;
+        }
+    }
+}
+
+.footer-contacts{
+    margin-bottom: 60px;
+
+    @media screen and (min-width: 768px) {
+    display: flex;
+    align-items: baseline;
+    justify-content: space-around;
+
+    margin-right: auto;
+    margin-left: auto;
+    }
+
+    @media screen and (min-width: 1200px) {
+        margin: 0;
+    }
+}
+
+.address-block{
+    @media screen and (max-width: 767px) {
+        margin-bottom: 60px;
+    }
+    @media screen and (min-width: 1200px) {
+        margin-right: 70px;
+    }
+}
+
+.address{
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+    
+    font-style: normal; 
+}
+
+.phys-address{
+    color: $white;
+    font-size: 14px;
+    line-height: 1.71;
+}
+
+.email, .phone{
+    display: inline-block;
+    margin-top: 8px;
+
+    color: $secondary-white;
+    font-size: 14px;
+    line-height: 1.71;
+}
+.footer .link{
+    transition: color 250ms $timing-function;
+
+    &:hover,
+    &:focus{
+        color: $accent;
+    }
+}
+
+.join,
+.form-footer p{
+    margin-top: 0;
+    margin-bottom: 20px;
+    
+    color: $white;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 1.14;
+    text-transform: uppercase;
+}
+
+
+.form-footer{
+    @media screen and (min-width: 1200px){
+        display: flex;
+        align-items: flex-end;
+        margin-left: 93px;
+    }
+}
+
+.form-input-footer{
+    outline: none;
+    margin-bottom: 20px;
+    padding: 15px;
+    width: 450px;
+    height: 50px;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+    border-radius: 4px;
+    background-color: $tertialy-bg-color;
+    color: $white;
+    cursor: pointer;
+
+    @media screen and (min-width: 1200px){
+        margin-bottom: 0;
+        margin-right: 12px;
+
+        width: 358px;
+    }
+}
+
+.subscribe-button{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.subscribe-icon{
+    margin-left: 10px;
+}

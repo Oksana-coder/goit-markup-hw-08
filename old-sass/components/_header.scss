@@ -1,0 +1,89 @@
+.site-nav{
+    display: flex;
+    justify-content: space-between;
+}
+
+.site-nav .link{
+    display: block;
+    padding-top: 32px;
+    padding-bottom: 32px;
+    
+    color: $title-text-color;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+
+    transition: color 250ms $timing-function;
+
+    &:hover, 
+    &:focus{
+        color: $accent;
+    }
+}
+
+.site-nav .link.current{
+    color: $accent;
+}
+
+.site-nav .item + .item{
+    margin-left: 50px;
+}
+
+.contacts{
+    display: flex;
+    justify-content: space-between;
+}
+
+.contacts .link{
+    display: flex;
+    justify-content: space-between;
+
+    color: $primary-text-color;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+
+    transition: color 250ms $timing-function;
+
+    &:hover, 
+    &:focus{
+        color: $accent;
+    }
+}
+
+.contacts .item + .item{
+    margin-left: 50px;
+}
+
+.contacts-icon{
+    margin-right: 10px;
+    fill: currentColor;
+}
+.link.current{
+    position: relative;
+    
+    &::after{
+        content: "";
+
+        position: absolute;
+        bottom: 0;
+        left: 0;
+
+        width: 100%;
+        height: 4px;
+        border-radius: 2px;
+        background-color: $accent;
+    }
+}
+.main-nav,
+.nav-line{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header-portfolio{
+    border-bottom: 1px solid $secondary-border-color;
+}

@@ -1,0 +1,661 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Портфолио</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/main.min.css"> 
+</head>
+<body>
+    <header class="page-header header-portfolio">
+        <div class="container nav-line">
+        <nav class="main-nav">
+            <a href="/" class="logo"><span class="logo-first-part">Web</span><span class="logo-second-part">Studio</span></a>
+            <button type="button" class="menu-button"
+            aria-expanded="false"
+            aria-controls="menu-container" 
+            data-menu-button>
+                <svg width="40" height="40" aria-label="Переключатель мобильного меню">
+                    <use class="icon-menu" href="./images/Optimized/svg/sprite.svg#icon-menu"></use>
+                    <use class="icon-cross" href="./images/Optimized/svg/sprite.svg#icon-close-black"></use>
+                    
+                </svg>
+            </button>
+            <div class="menu-container id=menu-container"  data-menu>
+                <ul class="site-nav">
+                    <li class="item"><a href="./index.html" class="link">Студия</a></li>
+                    <li class="item"><a href="./portfolio.html" class="link current">Портфолио</a></li>
+                    <li class="item"><a href="" class="link">Контакты</a></li>
+                </ul>
+                <ul class="contacts">
+                    <li class="item mail"><a href="mailto:info@devstudio.com" class="link">
+                        <svg width="16" height="12" class="contacts-icon"><use href="./images/Optimized/svg/sprite.svg#icon-envelope1"></use></svg>
+                        info@devstudio.com</a>
+                    </li>
+                    <li class="item"><a href="tel:+380961111111" class="link">
+                        <svg width="10" height="16" class="contacts-icon"><use href="./images/Optimized/svg/sprite.svg#icon-phone1"></use></svg>
+                        +38 096 111 11 11</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="container portfolio">
+            <h1 class="visually-hidden">Примеры проектов</h1>
+            <ul class="filters">
+                <li class="item"><button type="button" class="button">Все</button></li>
+                <li class="item"><button type="button" class="button">Веб-сайты</button></li>
+                <li class="item"><button type="button" class="button">Приложения</button></li>
+                <li class="item"><button type="button" class="button">Дизайн</button></li>
+                <li class="item"><button type="button" class="button">Маркетинг</button></li>
+            </ul>
+            <ul class="project-examples">
+                <li class="item">
+                    <a href="" class="project-card">
+                        <div class="overlay">
+                            <picture>
+                                <source
+                                  srcset="
+                                  ./images/Optimized/webp/desktop/project1-370.webp    1x,
+                                  ./images/Optimized/webp/desktop/project1-370@2x.webp 2x,
+                                  ./images/Optimized/webp/desktop/project1-370@3x.webp 3x"
+                                  media="(min-width: 1200px)"
+                                  type="image/webp"
+                                /> 
+                                <source
+                                  srcset="
+                                  ./images/Optimized/jpeg/desktop/project1-370.jpg    1x,
+                                  ./images/Optimized/jpeg/desktop/project1-370@2x.jpg 2x,
+                                  ./images/Optimized/jpeg/desktop/project1-370@3x.jpg 3x"
+                                  media="(min-width: 1200px)"
+                                />
+                                <source
+                                  srcset="
+                                  ./images/Optimized/webp/tablet/project1-354.webp    1x,
+                                  ./images/Optimized/webp/tablet/project1-354@2x.webp 2x,
+                                  ./images/Optimized/webp/tablet/project1-354@3x.webp 3x"
+                                  media="(min-width: 768px)"
+                                  type="image/webp"
+                                /> 
+                                <source 
+                                  srcset="
+                                  ./images/Optimized/jpeg/tablet/project1-354.jpg    1x,
+                                  ./images/Optimized/jpeg/tablet/project1-354@2x.jpg 2x,
+                                  ./images/Optimized/jpeg/tablet/project1-354@3x.jpg 3x"
+                                  media="(min-width: 768px)"
+                                />
+                                <source
+                                  srcset="
+                                  ./images/Optimized/webp/mobile/project1-450.webp    1x,
+                                  ./images/Optimized/webp/mobile/project1-450@2x.webp 2x,
+                                  ./images/Optimized/webp/mobile/project1-450@3x.webp 3x"
+                                  media="(max-width: 767px)"
+                                  type="image/webp"
+                                /> 
+                                <source   
+                                  srcset="
+                                  ./images/Optimized/jpeg/mobile/project1-450.jpg    1x,
+                                  ./images/Optimized/jpeg/mobile/project1-450@2x.jpg 2x,
+                                  ./images/Optimized/jpeg/mobile/project1-450@3x.jpg 3x"
+                                  media="(max-width: 767px)"
+                                />
+                                <img
+                                  src="./images/Optimized/jpeg/desktop/project1-370.jpg "
+                                  alt="монитор ноутбука"
+                                />
+                              </picture>
+                            <p class="project-description">Технокряк это современная площадка распространения коронавируса. Компании используют эту платформу для цифрового шпионажа и атак на защищённые сервера конкурентов.</p>
+                        </div>
+                        <div class="project-details">
+                            <h2>Технокряк</h2>
+                            <p class="project-type">Веб-сайт</p>
+                        </div>
+                    </a>
+                </li>
+                <li class="item">
+                    <a href="" class="project-card">
+                        <div class="overlay">
+                            <picture>
+                                <source
+                                  srcset="
+                                  ./images/Optimized/webp/desktop/project2-370.webp    1x,
+                                  ./images/Optimized/webp/desktop/project2-370@2x.webp 2x,
+                                  ./images/Optimized/webp/desktop/project2-370@3x.webp 3x"
+                                  media="(min-width: 1200px)"
+                                  type="image/webp"
+                                /> 
+                                <source
+                                  srcset="
+                                  ./images/Optimized/jpeg/desktop/project2-370.jpg    1x,
+                                  ./images/Optimized/jpeg/desktop/project2-370@2x.jpg 2x,
+                                  ./images/Optimized/jpeg/desktop/project2-370@3x.jpg 3x"
+                                  media="(min-width: 1200px)"
+                                />
+                                <source
+                                  srcset="
+                                  ./images/Optimized/webp/tablet/project2-354.webp    1x,
+                                  ./images/Optimized/webp/tablet/project2-354@2x.webp 2x,
+                                  ./images/Optimized/webp/tablet/project2-354@3x.webp 3x"
+                                  media="(min-width: 768px)"
+                                  type="image/webp"
+                                /> 
+                                <source 
+                                  srcset="
+                                  ./images/Optimized/jpeg/tablet/project2-354.jpg    1x,
+                                  ./images/Optimized/jpeg/tablet/project2-354@2x.jpg 2x,
+                                  ./images/Optimized/jpeg/tablet/project2-354@3x.jpg 3x"
+                                  media="(min-width: 768px)"
+                                />
+                                <source
+                                  srcset="
+                                  ./images/Optimized/webp/mobile/project2-450.webp    1x,
+                                  ./images/Optimized/webp/mobile/project2-450@2x.webp 2x,
+                                  ./images/Optimized/webp/mobile/project2-450@3x.webp 3x"
+                                  media="(max-width: 767px)"
+                                  type="image/webp"
+                                /> 
+                                <source   
+                                  srcset="
+                                  ./images/Optimized/jpeg/mobile/project2-450.jpg    1x,
+                                  ./images/Optimized/jpeg/mobile/project2-450@2x.jpg 2x,
+                                  ./images/Optimized/jpeg/mobile/project2-450@3x.jpg 3x"
+                                  media="(max-width: 767px)"
+                                />
+                                <img
+                                  src="./images/Optimized/jpeg/desktop/project2-370.jpg "
+                                  alt="два соперника баскетболиста"
+                                />
+                              </picture> 
+                            <p class="project-description">Технокряк это современная площадка распространения коронавируса. Компании используют эту платформу для цифрового шпионажа и атак на защищённые сервера конкурентов.</p>
+                        </div>
+                        <div class="project-details">
+                            <h2>Постер New Orlean vs Golden Star</h2>
+                            <p class="project-type">Дизайн</p>
+                        </div>
+                    </a>
+                </li>
+                <li class="item">
+                    <a href="" class="project-card">
+                        <div class="overlay">
+                            <picture>
+                                <source
+                                  srcset="
+                                  ./images/Optimized/webp/desktop/project3-370.webp    1x,
+                                  ./images/Optimized/webp/desktop/project3-370@2x.webp 2x,
+                                  ./images/Optimized/webp/desktop/project3-370@3x.webp 3x"
+                                  media="(min-width: 1200px)"
+                                  type="image/webp"
+                                /> 
+                                <source
+                                  srcset="
+                                  ./images/Optimized/jpeg/desktop/project3-370.jpg    1x,
+                                  ./images/Optimized/jpeg/desktop/project3-370@2x.jpg 2x,
+                                  ./images/Optimized/jpeg/desktop/project3-370@3x.jpg 3x"
+                                  media="(min-width: 1200px)"
+                                />
+                                <source
+                                  srcset="
+                                  ./images/Optimized/webp/tablet/project3-354.webp    1x,
+                                  ./images/Optimized/webp/tablet/project3-354@2x.webp 2x,
+                                  ./images/Optimized/webp/tablet/project3-354@3x.webp 3x"
+                                  media="(min-width: 768px)"
+                                  type="image/webp"
+                                /> 
+                                <source 
+                                  srcset="
+                                  ./images/Optimized/jpeg/tablet/project3-354.jpg    1x,
+                                  ./images/Optimized/jpeg/tablet/project3-354@2x.jpg 2x,
+                                  ./images/Optimized/jpeg/tablet/project3-354@3x.jpg 3x"
+                                  media="(min-width: 768px)"
+                                />
+                                <source
+                                  srcset="
+                                  ./images/Optimized/webp/mobile/project3-450.webp    1x,
+                                  ./images/Optimized/webp/mobile/project3-450@2x.webp 2x,
+                                  ./images/Optimized/webp/mobile/project3-450@3x.webp 3x"
+                                  media="(max-width: 767px)"
+                                  type="image/webp"
+                                /> 
+                                <source   
+                                  srcset="
+                                  ./images/Optimized/jpeg/mobile/project3-450.jpg    1x,
+                                  ./images/Optimized/jpeg/mobile/project3-450@2x.jpg 2x,
+                                  ./images/Optimized/jpeg/mobile/project3-450@3x.jpg 3x"
+                                  media="(max-width: 767px)"
+                                />
+                                <img
+                                  src="./images/Optimized/jpeg/desktop/project3-370.jpg "
+                                  alt="нарисованная рыба и логотип ресторана"
+                                />
+                              </picture> 
+                            <p class="project-description">Технокряк это современная площадка распространения коронавируса. Компании используют эту платформу для цифрового шпионажа и атак на защищённые сервера конкурентов.</p>
+                        </div>
+                        <div class="project-details">
+                            <h2>Ресторан Seafood</h2>
+                            <p class="project-type">Приложение</p>
+                        </div>
+                    </a>
+                </li>
+                <li class="item">
+                    <a href="" class="project-card">
+                        <div class="overlay">
+                            <picture>
+                                <source
+                                  srcset="
+                                  ./images/Optimized/webp/desktop/project4-370.webp    1x,
+                                  ./images/Optimized/webp/desktop/project4-370@2x.webp 2x,
+                                  ./images/Optimized/webp/desktop/project4-370@3x.webp 3x"
+                                  media="(min-width: 1200px)"
+                                  type="image/webp"
+                                /> 
+                                <source
+                                  srcset="
+                                  ./images/Optimized/jpeg/desktop/project4-370.jpg    1x,
+                                  ./images/Optimized/jpeg/desktop/project4-370@2x.jpg 2x,
+                                  ./images/Optimized/jpeg/desktop/project4-370@3x.jpg 3x"
+                                  media="(min-width: 1200px)"
+                                />
+                                <source
+                                  srcset="
+                                  ./images/Optimized/webp/tablet/project4-354.webp    1x,
+                                  ./images/Optimized/webp/tablet/project4-354@2x.webp 2x,
+                                  ./images/Optimized/webp/tablet/project4-354@3x.webp 3x"
+                                  media="(min-width: 768px)"
+                                  type="image/webp"
+                                /> 
+                                <source 
+                                  srcset="
+                                  ./images/Optimized/jpeg/tablet/project4-354.jpg    1x,
+                                  ./images/Optimized/jpeg/tablet/project4-354@2x.jpg 2x,
+                                  ./images/Optimized/jpeg/tablet/project4-354@3x.jpg 3x"
+                                  media="(min-width: 768px)"
+                                />
+                                <source
+                                  srcset="
+                                  ./images/Optimized/webp/mobile/project4-450.webp    1x,
+                                  ./images/Optimized/webp/mobile/project4-450@2x.webp 2x,
+                                  ./images/Optimized/webp/mobile/project4-450@3x.webp 3x"
+                                  media="(max-width: 767px)"
+                                  type="image/webp"
+                                /> 
+                                <source   
+                                  srcset="
+                                  ./images/Optimized/jpeg/mobile/project4-450.jpg    1x,
+                                  ./images/Optimized/jpeg/mobile/project4-450@2x.jpg 2x,
+                                  ./images/Optimized/jpeg/mobile/project4-450@3x.jpg 3x"
+                                  media="(max-width: 767px)"
+                                />
+                                <img
+                                  src="./images/Optimized/jpeg/desktop/project4-370.jpg "
+                                  alt="наушники"
+                                />
+                              </picture> 
+                            <p class="project-description">Технокряк это современная площадка распространения коронавируса. Компании используют эту платформу для цифрового шпионажа и атак на защищённые сервера конкурентов.</p>
+                        </div>
+                        <div class="project-details">
+                            <h2>Проект Prime</h2>
+                            <p class="project-type">Маркетинг</p>
+                        </div>
+                    </a>
+                </li>
+                <li class="item">
+                    <a href="" class="project-card">
+                        <div class="overlay">
+                            <picture>
+                                <source
+                                  srcset="
+                                  ./images/Optimized/webp/desktop/project5-370.webp    1x,
+                                  ./images/Optimized/webp/desktop/project5-370@2x.webp 2x,
+                                  ./images/Optimized/webp/desktop/project5-370@3x.webp 3x"
+                                  media="(min-width: 1200px)"
+                                  type="image/webp"
+                                /> 
+                                <source
+                                  srcset="
+                                  ./images/Optimized/jpeg/desktop/project5-370.jpg    1x,
+                                  ./images/Optimized/jpeg/desktop/project5-370@2x.jpg 2x,
+                                  ./images/Optimized/jpeg/desktop/project5-370@3x.jpg 3x"
+                                  media="(min-width: 1200px)"
+                                />
+                                <source
+                                  srcset="
+                                  ./images/Optimized/webp/tablet/project5-354.webp    1x,
+                                  ./images/Optimized/webp/tablet/project5-354@2x.webp 2x,
+                                  ./images/Optimized/webp/tablet/project5-354@3x.webp 3x"
+                                  media="(min-width: 768px)"
+                                  type="image/webp"
+                                /> 
+                                <source 
+                                  srcset="
+                                  ./images/Optimized/jpeg/tablet/project5-354.jpg    1x,
+                                  ./images/Optimized/jpeg/tablet/project5-354@2x.jpg 2x,
+                                  ./images/Optimized/jpeg/tablet/project5-354@3x.jpg 3x"
+                                  media="(min-width: 768px)"
+                                />
+                                <source
+                                  srcset="
+                                  ./images/Optimized/webp/mobile/project5-450.webp    1x,
+                                  ./images/Optimized/webp/mobile/project5-450@2x.webp 2x,
+                                  ./images/Optimized/webp/mobile/project5-450@3x.webp 3x"
+                                  media="(max-width: 767px)"
+                                  type="image/webp"
+                                /> 
+                                <source   
+                                  srcset="
+                                  ./images/Optimized/jpeg/mobile/project5-450.jpg    1x,
+                                  ./images/Optimized/jpeg/mobile/project5-450@2x.jpg 2x,
+                                  ./images/Optimized/jpeg/mobile/project5-450@3x.jpg 3x"
+                                  media="(max-width: 767px)"
+                                />
+                                <img
+                                  src="./images/Optimized/jpeg/desktop/project5-370.jpg "
+                                  alt="две картонные коробки"
+                                />
+                              </picture> 
+                            <p class="project-description">Технокряк это современная площадка распространения коронавируса. Компании используют эту платформу для цифрового шпионажа и атак на защищённые сервера конкурентов.</p>
+                        </div>
+                        <div class="project-details">
+                            <h2>Проект Boxes</h2>
+                            <p class="project-type">Приложение</p>
+                        </div>
+                    </a>
+                </li>
+                <li class="item">
+                    <a href="" class="project-card">
+                        <div class="overlay">
+                            <picture>
+                                <source
+                                  srcset="
+                                  ./images/Optimized/webp/desktop/project6-370.webp    1x,
+                                  ./images/Optimized/webp/desktop/project6-370@2x.webp 2x,
+                                  ./images/Optimized/webp/desktop/project6-370@3x.webp 3x"
+                                  media="(min-width: 1200px)"
+                                  type="image/webp"
+                                /> 
+                                <source
+                                  srcset="
+                                  ./images/Optimized/jpeg/desktop/project6-370.jpg    1x,
+                                  ./images/Optimized/jpeg/desktop/project6-370@2x.jpg 2x,
+                                  ./images/Optimized/jpeg/desktop/project6-370@3x.jpg 3x"
+                                  media="(min-width: 1200px)"
+                                />
+                                <source
+                                  srcset="
+                                  ./images/Optimized/webp/tablet/project6-354.webp    1x,
+                                  ./images/Optimized/webp/tablet/project6-354@2x.webp 2x,
+                                  ./images/Optimized/webp/tablet/project6-354@3x.webp 3x"
+                                  media="(min-width: 768px)"
+                                  type="image/webp"
+                                /> 
+                                <source 
+                                  srcset="
+                                  ./images/Optimized/jpeg/tablet/project6-354.jpg    1x,
+                                  ./images/Optimized/jpeg/tablet/project6-354@2x.jpg 2x,
+                                  ./images/Optimized/jpeg/tablet/project6-354@3x.jpg 3x"
+                                  media="(min-width: 768px)"
+                                />
+                                <source
+                                  srcset="
+                                  ./images/Optimized/webp/mobile/project6-450.webp    1x,
+                                  ./images/Optimized/webp/mobile/project6-450@2x.webp 2x,
+                                  ./images/Optimized/webp/mobile/project6-450@3x.webp 3x"
+                                  media="(max-width: 767px)"
+                                  type="image/webp"
+                                /> 
+                                <source   
+                                  srcset="
+                                  ./images/Optimized/jpeg/mobile/project6-450.jpg    1x,
+                                  ./images/Optimized/jpeg/mobile/project6-450@2x.jpg 2x,
+                                  ./images/Optimized/jpeg/mobile/project6-450@3x.jpg 3x"
+                                  media="(max-width: 767px)"
+                                />
+                                <img
+                                  src="./images/Optimized/jpeg/desktop/project6-370.jpg "
+                                  alt="монитор с сайтом проекта"
+                                />
+                              </picture> 
+                            <p class="project-description">Технокряк это современная площадка распространения коронавируса. Компании используют эту платформу для цифрового шпионажа и атак на защищённые сервера конкурентов.</p>
+                        </div>
+                        <div class="project-details">
+                            <h2>Inspiration has no Borders</h2>
+                            <p class="project-type">Веб-сайт</p>
+                        </div>
+                    </a>
+                </li>
+                <li class="item">
+                    <a href="" class="project-card">
+                        <div class="overlay">
+                            <picture>
+                                <source
+                                  srcset="
+                                  ./images/Optimized/webp/desktop/project7-370.webp    1x,
+                                  ./images/Optimized/webp/desktop/project7-370@2x.webp 2x,
+                                  ./images/Optimized/webp/desktop/project7-370@3x.webp 3x"
+                                  media="(min-width: 1200px)"
+                                  type="image/webp"
+                                /> 
+                                <source
+                                  srcset="
+                                  ./images/Optimized/jpeg/desktop/project7-370.jpg    1x,
+                                  ./images/Optimized/jpeg/desktop/project7-370@2x.jpg 2x,
+                                  ./images/Optimized/jpeg/desktop/project7-370@3x.jpg 3x"
+                                  media="(min-width: 1200px)"
+                                />
+                                <source
+                                  srcset="
+                                  ./images/Optimized/webp/tablet/project7-354.webp    1x,
+                                  ./images/Optimized/webp/tablet/project7-354@2x.webp 2x,
+                                  ./images/Optimized/webp/tablet/project7-354@3x.webp 3x"
+                                  media="(min-width: 768px)"
+                                  type="image/webp"
+                                /> 
+                                <source 
+                                  srcset="
+                                  ./images/Optimized/jpeg/tablet/project7-354.jpg    1x,
+                                  ./images/Optimized/jpeg/tablet/project7-354@2x.jpg 2x,
+                                  ./images/Optimized/jpeg/tablet/project7-354@3x.jpg 3x"
+                                  media="(min-width: 768px)"
+                                />
+                                <source
+                                  srcset="
+                                  ./images/Optimized/webp/mobile/project7-450.webp    1x,
+                                  ./images/Optimized/webp/mobile/project7-450@2x.webp 2x,
+                                  ./images/Optimized/webp/mobile/project7-450@3x.webp 3x"
+                                  media="(max-width: 767px)"
+                                  type="image/webp"
+                                /> 
+                                <source   
+                                  srcset="
+                                  ./images/Optimized/jpeg/mobile/project7-450.jpg    1x,
+                                  ./images/Optimized/jpeg/mobile/project7-450@2x.jpg 2x,
+                                  ./images/Optimized/jpeg/mobile/project7-450@3x.jpg 3x"
+                                  media="(max-width: 767px)"
+                                />
+                                <img
+                                  src="./images/Optimized/jpeg/desktop/project7-370.jpg "
+                                  alt="открытый журнал"
+                                />
+                              </picture> 
+                            <p class="project-description">Технокряк это современная площадка распространения коронавируса. Компании используют эту платформу для цифрового шпионажа и атак на защищённые сервера конкурентов.</p>
+                        </div>
+                        <div class="project-details">
+                            <h2>Издание Limited Edition</h2>
+                            <p class="project-type">Дизайн</p>
+                        </div>
+                    </a>
+                </li>
+                <li class="item">
+                    <a href="" class="project-card">
+                        <div class="overlay">
+                            <picture>
+                                <source
+                                  srcset="
+                                  ./images/Optimized/webp/desktop/project8-370.webp    1x,
+                                  ./images/Optimized/webp/desktop/project8-370@2x.webp 2x,
+                                  ./images/Optimized/webp/desktop/project8-370@3x.webp 3x"
+                                  media="(min-width: 1200px)"
+                                  type="image/webp"
+                                /> 
+                                <source
+                                  srcset="
+                                  ./images/Optimized/jpeg/desktop/project8-370.jpg    1x,
+                                  ./images/Optimized/jpeg/desktop/project8-370@2x.jpg 2x,
+                                  ./images/Optimized/jpeg/desktop/project8-370@3x.jpg 3x"
+                                  media="(min-width: 1200px)"
+                                />
+                                <source
+                                  srcset="
+                                  ./images/Optimized/webp/tablet/project8-354.webp    1x,
+                                  ./images/Optimized/webp/tablet/project8-354@2x.webp 2x,
+                                  ./images/Optimized/webp/tablet/project8-354@3x.webp 3x"
+                                  media="(min-width: 768px)"
+                                  type="image/webp"
+                                /> 
+                                <source 
+                                  srcset="
+                                  ./images/Optimized/jpeg/tablet/project8-354.jpg    1x,
+                                  ./images/Optimized/jpeg/tablet/project8-354@2x.jpg 2x,
+                                  ./images/Optimized/jpeg/tablet/project8-354@3x.jpg 3x"
+                                  media="(min-width: 768px)"
+                                />
+                                <source
+                                  srcset="
+                                  ./images/Optimized/webp/mobile/project8-450.webp    1x,
+                                  ./images/Optimized/webp/mobile/project8-450@2x.webp 2x,
+                                  ./images/Optimized/webp/mobile/project8-450@3x.webp 3x"
+                                  media="(max-width: 767px)"
+                                  type="image/webp"
+                                /> 
+                                <source   
+                                  srcset="
+                                  ./images/Optimized/jpeg/mobile/project8-450.jpg    1x,
+                                  ./images/Optimized/jpeg/mobile/project8-450@2x.jpg 2x,
+                                  ./images/Optimized/jpeg/mobile/project8-450@3x.jpg 3x"
+                                  media="(max-width: 767px)"
+                                />
+                                <img
+                                  src="./images/Optimized/jpeg/desktop/project8-370.jpg "
+                                  alt="ярлык-lab"
+                                />
+                              </picture> 
+                            <p class="project-description">Технокряк это современная площадка распространения коронавируса. Компании используют эту платформу для цифрового шпионажа и атак на защищённые сервера конкурентов.</p>
+                        </div>
+                        <div class="project-details">
+                            <h2>Проект LAB</h2>
+                            <p class="project-type">Маркетинг</p>
+                        </div>
+                    </a>
+                </li>
+                <li class="item">
+                    <a href="" class="project-card">
+                        <div class="overlay">
+                            <picture>
+                                <source
+                                  srcset="
+                                  ./images/Optimized/webp/desktop/project9-370.webp    1x,
+                                  ./images/Optimized/webp/desktop/project9-370@2x.webp 2x,
+                                  ./images/Optimized/webp/desktop/project9-370@3x.webp 3x"
+                                  media="(min-width: 1200px)"
+                                  type="image/webp"
+                                /> 
+                                <source
+                                  srcset="
+                                  ./images/Optimized/jpeg/desktop/project9-370.jpg    1x,
+                                  ./images/Optimized/jpeg/desktop/project9-370@2x.jpg 2x,
+                                  ./images/Optimized/jpeg/desktop/project9-370@3x.jpg 3x"
+                                  media="(min-width: 1200px)"
+                                />
+                                <source
+                                  srcset="
+                                  ./images/Optimized/webp/tablet/project9-354.webp    1x,
+                                  ./images/Optimized/webp/tablet/project9-354@2x.webp 2x,
+                                  ./images/Optimized/webp/tablet/project9-354@3x.webp 3x"
+                                  media="(min-width: 768px)"
+                                  type="image/webp"
+                                /> 
+                                <source 
+                                  srcset="
+                                  ./images/Optimized/jpeg/tablet/project9-354.jpg    1x,
+                                  ./images/Optimized/jpeg/tablet/project9-354@2x.jpg 2x,
+                                  ./images/Optimized/jpeg/tablet/project9-354@3x.jpg 3x"
+                                  media="(min-width: 768px)"
+                                />
+                                <source
+                                  srcset="
+                                  ./images/Optimized/webp/mobile/project9-450.webp    1x,
+                                  ./images/Optimized/webp/mobile/project9-450@2x.webp 2x,
+                                  ./images/Optimized/webp/mobile/project9-450@3x.webp 3x"
+                                  media="(max-width: 767px)"
+                                  type="image/webp"
+                                /> 
+                                <source   
+                                  srcset="
+                                  ./images/Optimized/jpeg/mobile/project9-450.jpg    1x,
+                                  ./images/Optimized/jpeg/mobile/project9-450@2x.jpg 2x,
+                                  ./images/Optimized/jpeg/mobile/project9-450@3x.jpg 3x"
+                                  media="(max-width: 767px)"
+                                />
+                                <img
+                                  src="./images/Optimized/jpeg/desktop/project9-370.jpg "
+                                  alt="ноутбук с приложением на экране"
+                                />
+                              </picture> 
+                            <p class="project-description">Технокряк это современная площадка распространения коронавируса. Компании используют эту платформу для цифрового шпионажа и атак на защищённые сервера конкурентов.</p>
+                        </div>
+                        <div class="project-details">
+                            <h2>Growing Business</h2>
+                            <p class="project-type">Приложение</p>
+                        </div>
+                    </a>
+                </li>
+            </ul>
+        </section>
+    </main>
+    <footer class="footer">
+        <div class="container footer-line">
+        <div class="footer-contacts">
+            <div class="address-block">
+                <a href="/" class="logo"><span class="logo-first-part">Web</span><span class="logo-second-part">Studio</span></a>
+                <address class="address">
+                        <a href="" class="phys-address link">г. Киев, пр-т Леси Украинки, 26</a>
+                        <a href="mailto:info@example.com" class="email link">info@example.com</a>
+                        <a href="tel:+380991111111" class="phone link">+38 099 111 11 11</a>
+                </address>
+            </div>
+            <div class="join-us">
+                <p class="join">присоединяйтесь</p>
+                <ul class="social-networks">
+                    <li><a href="" class="social-link-footer">
+                        <svg class="link-icon" width="20" height="20"><use href="./images/Optimized/svg/sprite.svg#icon-instagram1"></use></svg>
+                    </a></li>
+                    <li><a href="" class="social-link-footer">
+                        <svg class="link-icon" width="20" height="20"><use href="./images/Optimized/svg/sprite.svg#icon-twitter1"></use></svg>
+                    </a></li>
+                    <li><a href="" class="social-link-footer">
+                        <svg class="link-icon" width="20" height="20"><use href="./images/Optimized/svg/sprite.svg#icon-facebook1"></use></svg>
+                    </a></li>
+                    <li><a href="" class="social-link-footer">
+                        <svg class="link-icon" width="20" height="20"><use href="./images/Optimized/svg/sprite.svg#icon-linkedin1"></use></svg>
+                    </a></li>
+                </ul>
+            </div>
+        </div>
+            <form class="form-footer">
+                <div>
+                    <p>Подпишитесь на рассылку</p>
+                    <input type="text" class="form-input-footer" name="email" id="email" placeholder="E-mail">
+                </div>
+                    <button type="submit" class="hero-button subscribe-button">Подписаться
+                        <svg class="subscribe-icon" width="24" height="24"><use href="./images/Optimized/svg/sprite.svg#icon-icon-send"></use></svg> 
+                    </button>
+            </form>
+        </div>
+    </footer>
+    <script src="./js/menu-button.js"></script>
+</body>
+</html>
