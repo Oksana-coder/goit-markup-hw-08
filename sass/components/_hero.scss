@@ -4,7 +4,7 @@
     margin-left: auto;
     margin-right: auto;
 
-    max-width: 480px;
+    width: 100%;
     height: 400px;
 
     background-color: $tertialy-bg-color;
@@ -17,10 +17,6 @@
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
-
-    @media screen and (min-width: 768px){
-        max-width: 768px;
-    }
 
     @media screen and (min-width: 1200px){
         max-width: 1600px;

@@ -56,8 +56,8 @@
     
     @media screen and (max-width: 767px) {
         display: none;
-        position: absolute;
-        top: 100%;
+        position: fixed;
+        top: 60px;
         left: 0;
         
         padding: 60px;
