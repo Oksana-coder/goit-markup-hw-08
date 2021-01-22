@@ -3,7 +3,14 @@ body{
     color: $primary-text-color;
     font-family: $primary-font;
     letter-spacing: 0.03em;
+
+    padding-top: 60px;
+
+    @media screen and (min-width: 768px) {
+        padding-top: 80px;
+    }
 }
+
 body.modal-open{
     overflow: hidden;
 }
